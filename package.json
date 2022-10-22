@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server.js",
+    "build": "ng build --configuration production ",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
@@ -14,6 +15,8 @@
     "@angular/cdk": "^14.2.4",
     "@angular/common": "^14.1.0",
     "@angular/compiler": "^14.1.0",
+    "@angular/cli": "~14.1.2",
+    "@angular/compiler-cli": "^14.1.0",
     "@angular/core": "^14.2.5",
     "@angular/forms": "^14.1.0",
     "@angular/material": "^14.2.4",
@@ -21,13 +24,16 @@
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
     "bootstrap": "^5.2.0",
+    "express": "^4.18.2",
     "fontawesome": "^5.6.3",
     "jquery": "^3.6.1",
     "ng2-search-filter": "^0.5.1",
+    "path": "^0.12.7",
     "rxjs": "~7.5.0",
     "sweetalert2": "^11.4.37",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.7.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.2",
@@ -41,5 +47,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
+  },
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.15.0"
   }
 }
