@@ -1,0 +1,179 @@
+<!-- navbar starts here -->
+<nav class="navbar navbar-expand-lg" style="background-color: #000000">
+  <div class="container-fluid p-3">
+    <div class="d-flex">
+      <div class="ms-5">
+        <img src="  /assets/images/logo black (2).jpg" />
+      </div>
+      <h3 class="text-light mt-4 ms-3">
+        T<span class="text-danger">i</span><span class="text-warning">m</span
+        ><span class="text-primary">e</span> <span class="text-light">T</span
+        ><span class="text-warning">r</span><span class="text-danger">a</span
+        ><span class="text-primary">c</span><span class="text-danger">k</span
+        ><span class="text-warning">e</span><span class="text-light">r</span>
+      </h3>
+    </div>
+  </div>
+</nav>
+
+<!-- navbar ends here -->
+
+<section class="login_section_main">
+  <div class="d-flex justify-content-between col-10 m-auto login_page">
+    <div class="quotes col-5 mt-5">
+      <!-- <p class="login_text text-center mt-5 p-5 text-light fw-bold">
+        "The key is in not spending time, but in investing it."
+      </p> -->
+    </div>
+    <div class="login_form col-5">
+      <!-- login form starts here -->
+      <div class="container">
+        <form
+          class="col-12 mt-5 loginform p-3"
+          [formGroup]="loginForm"
+          (ngSubmit)="logIn()"
+        >
+          <div class="text-center mt-3">
+            <h1 class="text-light">LOGIN HERE</h1>
+          </div>
+          <div class="form-floating mb-3 mt-5">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+              formControlName="eemail"
+            />
+            <label for="floatingInput">Email address</label>
+            <span
+              class="text-danger"
+              *ngIf="
+                loginForm.get('eemail').hasError('required') &&
+                loginForm.get('eemail').touched
+              "
+              ><b class="text-light">Email is required</b></span
+            >
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+              formControlName="epassword"
+            />
+
+            <label for="floatingPassword">Password</label>
+            <span
+              class="text-danger"
+              *ngIf="
+                loginForm.get('epassword').hasError('required') &&
+                loginForm.get('epassword').touched
+              "
+              ><b class="text-light">Password is required</b></span
+            >
+          </div>
+          <br />
+          <br />
+          <div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              style="width: 100%"
+            >
+              Submit
+            </button>
+          </div>
+          <br />
+          <div class="text-center">
+            <small class="text-primary"
+              ><a
+                routerLink="/login"
+                class="text-light"
+                style="text-decoration: none"
+                >Forgot Password</a
+              ></small
+            >
+          </div>
+        </form>
+      </div>
+      <!-- login form ends here -->
+    </div>
+  </div>
+</section>
+
+<!-- footer starts here -->
+<footer style="background-color: black">
+  <div class="container-fluid p-5">
+    <div class="mt-3 table_footer m-auto mb-5">
+      <table class="table table-borderless text-light text-muted">
+        <tr>
+          <th>HEAD OFFICE</th>
+          <th>CENTRAL REGION</th>
+          <th>NORTH REGION</th>
+          <th>SUPPORT</th>
+          <th>About Us</th>
+        </tr>
+        <tr>
+          <td class="tddata text-muted" href="#">
+            ICT Academy of Kerala L-9, Thejaswini Building Technopark campus
+            Karyavattom-695581
+          </td>
+          <td class="tddata text-muted" href="#">
+            Ground Floor,Rajamally Building, Infopark, Koratty, Thrissur,
+            Kerala, India. Phone: +91-481-2731050
+          </td>
+          <td class="tddata text-muted" href="#">
+            2nd Floor, Ul Cyberpark Building, Nellikode PO, Kozhikode, Phone:
+            +91-495-2431432
+          </td>
+          <td class="tddata text-muted" href="#">
+            For more details Contact us @ info@ictkerala.org OR reach us at
+            0471-2700811/12/13
+          </td>
+          <td>
+            ICT Academy of Kerala is a Social Enterprise created in a Public
+            Private Partnership model (PPP) for imparting ICT skills to the
+            youths of Kerala and improve their employability opportunities in
+            the Industry. The Company is supported by Govt. of India , partnered
+            by Govt. of Kerala and the IT industry.
+          </td>
+        </tr>
+      </table>
+      <hr class="text-light mt-5 mb-5" />
+      <div class="d-flex">
+        <div class="d-flex">
+          <div class="ms-5">
+            <img src="  /assets/images/logo black (2).jpg" />
+          </div>
+          <h3 class="text-light mt-4 ms-3">
+            T<span class="text-danger">i</span
+            ><span class="text-warning">m</span
+            ><span class="text-primary">e</span>
+            <span class="text-light">T</span><span class="text-warning">r</span
+            ><span class="text-danger">a</span
+            ><span class="text-primary">c</span
+            ><span class="text-danger">k</span
+            ><span class="text-warning">e</span
+            ><span class="text-light">r</span>
+          </h3>
+        </div>
+        <div
+          class="social_icons d-flex"
+          style="color: white; margin-left: 200px; margin-top: 30px"
+        >
+          <i class="uil uil-facebook px-3"></i>
+          <i class="uil uil-twitter-alt px-3"></i>
+          <i class="uil uil-instagram px-3"></i>
+          <i class="uil uil-globe px-3"></i>
+        </div>
+      </div>
+      <div class="footer_note mt-5 text-center">
+        <p class="text-light text-muted">
+          Copyright © 2022 ICTAK Time Tracker. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer ends here -->

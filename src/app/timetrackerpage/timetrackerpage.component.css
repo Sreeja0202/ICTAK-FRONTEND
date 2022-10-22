@@ -1,0 +1,317 @@
+nav {
+  height: 80px;
+}
+.navbar-toggler-icon {
+  padding-top: 10px;
+  padding-left: 18px;
+  height: 50px;
+  width: 150px;
+  border: 1px solid rgb(214, 154, 25);
+  color: white;
+}
+
+nav button {
+  height: 50px;
+}
+.options {
+  background-color: #240c30;
+  border: 1px solid rgb(81, 81, 196);
+}
+mat-form-field {
+  margin-left: 10px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(81, 81, 196);
+}
+mat-label {
+  color: white;
+}
+.space {
+  height: 250px;
+}
+
+.container {
+  height: 600px;
+}
+
+.employeedetail {
+  margin-top: 2%;
+  width: 50%;
+  margin-left: 50%;
+  height: 150px;
+}
+mat-card {
+  border-radius: 10px;
+  background-color: #240c30;
+  color: white;
+}
+mat-card-subtitle {
+  color: white;
+}
+
+.projectdetails {
+  color: white;
+  background-color: #240c30;
+  margin-top: 4%;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.sw-container {
+  margin-left: 10%;
+  margin-top: 8%;
+  height: 80px;
+  background-color: rgb(81, 81, 196);
+  padding: 5px;
+  text-align: center;
+  border-radius: 40px;
+  width: 140px;
+  box-shadow: 0 3px 6px rgb(81, 81, 196), 0 3px 6px rgb(81, 81, 196);
+}
+.stopwatch {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+.buttoncontainer {
+  height: 250px;
+}
+.btn {
+  color: white;
+  border-radius: 70px;
+}
+
+.modal.fade.show {
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.example {
+  position: absolute;
+  right: 0;
+  top: 30px;
+
+  margin-top: 30px;
+  height: 400px;
+}
+.example-sidenav-content {
+  display: flex;
+  height: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilecard {
+  width: 200px;
+  height: 288px;
+  background-color: #efefef;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.image img {
+  transition: all 0.5s;
+}
+.prof {
+  height: 35px;
+  width: 35px;
+  border-radius: 54px;
+}
+
+.profilecard:hover .image img {
+  transform: scale(1.5);
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.idd {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.idd1 {
+  font-size: 12px;
+}
+
+.number {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.follow {
+  font-size: 12px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.btn1 {
+  height: 40px;
+  width: 90px;
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+  font-size: 15px;
+}
+
+.text span {
+  font-size: 13px;
+  color: #545454;
+  font-weight: 500;
+}
+
+.icons i {
+  font-size: 19px;
+}
+
+hr .new1 {
+  border: 1px solid;
+}
+
+.join {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+.date {
+  background-color: #ccc;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 64px 65px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.help {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.hom {
+  margin-top: 10px;
+}
+
+.iconlist {
+  display: flex;
+}
+
+/* /////////////////sidenav css */
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: calc(102vh - 100px);
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 500px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/*  */
+.homebell {
+  font-size: x-large;
+}
+
+/* body */
+
+.table_icon {
+  cursor: pointer;
+}
+.filter_nav,
+.table_details {
+  width: 100%;
+}
+.emp_details,
+.date_details,
+.filter_details,
+.work_details {
+  border: 1px solid gray;
+}
+
+.work_details {
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.filter_button {
+  cursor: pointer;
+}
+.timer_icon {
+  cursor: pointer;
+}
+.filter_option {
+  outline: none;
+}
+
+.mat-drawer-side.mat-drawer-end {
+  border-left: none;
+}
