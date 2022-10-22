@@ -10,12 +10,12 @@ import { Filter } from './filter.model';
   providedIn: 'root',
 })
 export class AuthService {
-  url = 'http://localhost:3000/employees';
-  loginurl = 'http://localhost:3000/employees/login';
-  prourl = 'http://localhost:3000/projects';
-  trackerurl = 'http://localhost:3000/trackers';
-  taskurl = 'http://localhost:3000/tasks';
-  filterurl = 'http://localhost:3000/filters';
+  url = 'https://timetrackingsystem.herokuapp.com/';
+  loginurl = 'https://timetrackingsystem.herokuapp.com/';
+  prourl = 'https://timetrackingsystem.herokuapp.com/';
+  trackerurl = 'https://timetrackingsystem.herokuapp.com/';
+  taskurl = 'https://timetrackingsystem.herokuapp.com/';
+  filterurl = 'https://timetrackingsystem.herokuapp.com/';
   userData: any;
 
   constructor(private http: HttpClient) {
